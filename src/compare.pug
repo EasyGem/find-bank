@@ -3,18 +3,19 @@ head
   meta(charset='UTF-8')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   meta(http-equiv='X-UA-Compatible', content='ie=edge')
-  title Найди Банк – Банки с выгодными тарифами на РКО для ИП и ООО в России | Полезные статьи
+  title Сравнение банковских тарифов на РКО | Найди банк
   link(rel='stylesheet', href='css/main.css')
   link(rel='stylesheet', href='css/jquery.scrollbar.css')
+  link(rel="icon" type="image/png" href="/img/favicon.png")
 body
   //= templates/header.pug
 
   .l-compare.mb-20
     .m-container
       .content
-        h2.text-center.mb-20 Сравнение банковских тарифов на РКО
+        h2(data-wow-duration=".5s").wow.fadeInUp.text-center.mb-20 Сравнение банковских тарифов на РКО
 
-        .compare__wrapper.scrollbar-inner
+        .compare__wrapper.scrollbar-inner(data-wow-duration=".5s" data-wow-delay=".1s").wow.fadeInUp
           table.compare__table
             tbody#banks-table
               tr.title
@@ -22,7 +23,9 @@ body
                 //- Titles will be here
                 td.add-bank-wrapper
                   .m-dropdown#add-bank
-                    a.btn.btn--small Добавить банк
+                    a.btn.btn--small.btn--icon
+                      img(src="/img/plus.svg")
+                      span Добавить банк
                     .dropdown-menu
                       //- Options will be here
 
