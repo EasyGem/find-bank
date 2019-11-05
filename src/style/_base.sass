@@ -1,0 +1,59 @@
+// Base
+body, html
+  font-family: "Futura PT"
+  font-weight: 400
+  font-size: 16px
+  min-height: 100vh
+  margin: 0px
+  color: $black
+  background-color: #F5F5F5
+
+*
+  box-sizing: border-box
+  line-height: 1.4
+
+a
+  color: inherit
+  text-decoration: none
+  transition: .25s ease
+
+h1
+  font-size: 48px
+  margin: 0
+  font-weight: 500
+h2
+  font-family: "Futura PT"
+  font-size: 48px
+  margin: 0
+  font-weight: 500
+h3
+  font-size: 28px
+  margin: 0
+  font-weight: 500
+h4
+  font-size: 24px
+  margin: 0
+  font-weight: 500
+p
+  font-size: 18px
+  margin: 0
+
+@include respond-to(md)
+  h1
+    font-size: 40px
+  h2
+    font-size: 40px
+  h3
+    font-size: 24px
+
+@include respond-to(sm)
+  h1
+    font-size: 28px
+  h2
+    font-size: 28px
+  h3
+    font-size: 20px
+  h4
+    font-size: 20px
+  p 
+    font-size: 16px
